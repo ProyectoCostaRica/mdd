@@ -34,7 +34,7 @@ El sistema está divido en dos partes. En la primera etapa, el módulo central M
 ```
 # Título
 
-Texto del artículo
+Texto **del** artículo
 ```
 
 La lista de tokens resultante será:
@@ -47,8 +47,15 @@ La lista de tokens resultante será:
     
 1: 
     type: "paragraph"
-    raw: "\nTexto del artículo"
-    text: "Texto del artículo"
+    raw: "\nTexto **del** artículo"
+    text: "Texto **del** artículo"
+    tokens: 0: 
+                type: bold
+                raw: Texto **del** artículo
+                text: del
+                previous: Texto
+                next: artículo
+
 
 ```
 
