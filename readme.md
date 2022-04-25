@@ -4,8 +4,6 @@ MDD es una librería que transcribe un documento MD a un documento HTML. El obje
 
 ![Librería MDD](source/mdd.svg)
 
-## Diseño
-
 
 ## Comandos
 
