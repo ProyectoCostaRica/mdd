@@ -29,7 +29,7 @@ browserify mdd.js --standalone mdd > dist/mdd.min.js
 
 ![Diseño](source/design.svg)
 
-El sistema está divido en dos partes. En la primera etapa, el módulo central MDD entrega el documento .md original, el sistema descompone el documento en sus categorizables partes más pequeñas y genera a cambio una lista de tokens. Los tokens son pequeños diccionarios recursivos que especifican la información de un elemento. Por ejemplo, si analizamos el siguiente código markdown:
+El sistema está divido en dos partes. En la primera etapa, el módulo central MDD entrega el documento markdown original, el sistema descompone el documento en sus categorizables partes más pequeñas y genera a cambio una lista de tokens. Los tokens son pequeños diccionarios recursivos que contienen la información de un elemento. Por ejemplo, si analizamos el siguiente código markdown:
 
 ```
 # Título
@@ -63,7 +63,7 @@ Tokenizer es un módulo simple. Recibe de Lexer un documento y devuelve el prime
 
 Cuando Lexer termina de descomponer en sus partes todo el documento markdown inicial le devuelve a MDD la lista completa de tokens y MDD empieza la segunda etapa del proceso. 
 
-En la segunda parte del proceso el módulo MDD le pasa a Parser la lista de tokens y Parser le devuelve a cambio el código HTML correspondiente. Para la lista de tokens:
+En la segunda parte del proceso el módulo MDD le pasa a Parser la lista de tokens y Parser le devuelve a cambio el código HTML correspondiente. Por ejemplo, para la lista de tokens:
 
 ```
 0:
@@ -90,11 +90,5 @@ Parser devuelve:
 <p> Texto <b>del</b> artículo </p>
 ```
 
-
-
-
-
-
-
-
+Al igual que Lexer, Parser es recusivo ya que analiza todos los niveles de los tokens y para cada nivel encadena la traducción html correspondiente. 
 
