@@ -4,6 +4,7 @@ MDD es una librería que transcribe un documento MD a un documento HTML. El obje
 
 ![Librería MDD](source/mdd.svg)
 
+MDD se basa en el modelo de la librería [Marked](https://github.com/markedjs/marked) creada por Christopher Jeffrey bajo la Licencia MIT.
 
 ## Comandos
 
