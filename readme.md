@@ -93,3 +93,6 @@ Parser devuelve:
 
 Al igual que Lexer, Parser es recusivo ya que analiza todos los niveles de los tokens y para cada nivel encadena la traducción html correspondiente. 
 
+## Sintaxis
+
+MDD usa la sintaxis markdown base pero también agrega otras funcionalidades como pies de página y audios. Toda la nomeclatura se encuentra en el documento [sintaxis](syntax.md)
