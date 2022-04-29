@@ -95,4 +95,4 @@ Al igual que Lexer, Parser es recusivo ya que analiza todos los niveles de los t
 
 ## Sintaxis
 
-MDD usa la sintaxis markdown base pero también agrega otras funcionalidades como pies de página y audios. Toda la nomeclatura se encuentra en el documento [sintaxis](syntax.md)
+MDD usa la sintaxis markdown base pero también agrega otras funcionalidades como pies de página y audios. Toda la nomeclatura se encuentra en el documento [sintaxis](syntax.md).
