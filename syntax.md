@@ -1,7 +1,7 @@
 # Sintaxis
 
 ### **Espacios**
-Los espacios y sangrías al inicio y al final de un renglón son omitidos. Únicamente se visualizan los espacios entre caracteres. Más de un espacio se interpreta como uno solo.
+Los espacios y sangrías al inicio y al final de un renglón son omitidos; únicamente se visualizan los espacios entre caracteres. Indistintamente de su ubicación, más de un espacio se interpreta como uno solo.
 
 ### **Salto de línea**
 Un único cambio de línea (\n) se interpreta como un cambio de línea. 
@@ -44,20 +44,24 @@ Tipo de letra identificada con dos pares de asteriscos. No se dejan espacios ent
 **Negrita**
 ```
 
+
 ### **Itálica y negrita**
 Tipo de letra identificada con tres pares de asteriscos. No se dejan espacios entre los asteriscos y el texto.
+
 ```
 ***Itálica y negrita***
 ```
 
 ### **Tachado**
-Tipo de letra identificada con dos pares de virgulillas. No se dejan espacios entre los virgulilla y el texto.
+Tipo de letra identificada con dos pares de virgulillas. No se dejan espacios entre las virgulillas y el texto.
+
 ```
 ~~Texto tachado~~
 ```
 
 ### **Bloque de cita**
 Las citas se colocan en bloques marcados por un símbolos mayor que (>). Es necesario dejar un espacio entre el símbolo y el texto. 
+
 ```
 > Bloque de cita
 ```
@@ -70,6 +74,7 @@ Las citas se colocan en bloques marcados por un símbolos mayor que (>). Es nece
 
 ### **Listas**
 Las listas no ordenadas se identifican con dos guiones (--) seguidos de un espacio.
+
 ```
 -- Elemento
 -- Elemento
@@ -78,7 +83,7 @@ Las listas no ordenadas se identifican con dos guiones (--) seguidos de un espac
 
 
 ### **Notas al pie de página**
-Los pies de página o notas están en dos partes del documento. Primero en el texto donde se necesita hacer la aclaración o extensión. Luego al final del documento donde se establece la nota. Se hace uso de los símbolos mayor y menor (<>) para delimitar el texto a explicar. 
+Los pies de página o notas están en dos partes del documento: primero en el texto donde se necesita hacer la aclaración o extensión, luego al final del documento donde se establece la nota. Se hace uso de los símbolos mayor y menor (<>) para delimitar el texto a explicar. 
 
 ```
 Texto donde se hace referencia a la <nota[^1]>.
@@ -90,61 +95,51 @@ Texto donde se hace referencia a la <nota[^1]>.
 
 ### **Link**
 
-Hay varias formas de crear un link. Primero aquella donde se desea visualizar el link tal y como es: 
+Hay diferentes sintaxis de crear un link. La más sencilla es aquella donde se desea visualizar el link tal y como es: 
 
 ```
 [](https://www.example.com)
 ```
 
-Segundo donde se desea visualizar la descripción del link en lugar del link mismo: 
+Luego la sintaxis donde se desea visualizar la descripción del link en lugar del link mismo: 
 
 ```
 [Descripción](https://www.example.com)
 ```
 
-Y en el tercero se desea abrir el link en la misma ventana actual, generalemente para links dentro de la misma página:
+Los links anteriores se abren en una ventana externa, la última sintaxis se usa para abrir el link en la ventana actual, esta se usa generalmente para navegar dentro de la misma página:
 
 ```
 [Descripción](https://www.example.com){sametab}
 ```
 
-### Imagen
+### **Imagen**
 
-Se presentan 3 tipos de imágenes. 
-La primera de ellas es aquella que no presenta un pie de imagen. Esta debe de tener un título para el tag alt en HTML, el link donde está la imagen y el ancho de la imagen con su unidad respectiva. 
+Se presentan 3 tipos de imágenes. La primera es la más sencilla; se requiere poner un título para el tag alt en HTML, el link de la imagen, y el ancho de la imagen con su unidad. El ancho siempre es con respecto al ancho de la página web. 
 
 ```
 ![Título](link.jpg)(100%)
 ```
 
-El segundo tipo de imagen es similar a la anterior pero incluye un pie de imagen, el cual se coloca entre asteriscos en la línea siguiente:
+El segundo tipo de imagen es similar a la anterior pero incluye un pie de imagen que se agrega entre asteriscos en la línea siguiente.
 
 ```
 ![Título](link.jpg)(100%)
 *Pie de imagen*
 ```
 
-El último tipo de imagen es aquella que al mismo tiempo es un link externo, generalmente para los iconos de redes sociales ligadas. La sintaxis es: 
+El último tipo de imagen es aquella que al mismo tiempo es un link externo, generalmente para los íconos de redes sociales ligadas. La sintaxis es: 
 
+```
 ![Título](link.jpg)(45px)(link externo)
+```
 
-
-### Audio
+### **Audio**
 
 Los audios deben tener un título para el tag alt en HTML y el link donde se encuentra. 
 
 ```
 !![Título](link.mp3)
-```
-
-### Código
-Para escribir texto que no se debe interpretar por este lenguage, el texto debe ser colocado entre dos pares de 3 acentos graves (```):
-
-
-```
-&#96;&#96;&#96	
-**Texto que no está en negrita**
-&#96;&#96;&#96	
 ```
 
 ### Metadatos
@@ -176,12 +171,12 @@ Cada sección de detalle debe tener un título, el cual se coloca después del s
 
 
 ```
-/&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
+/-----------------------
 # Titulo de la sección 
 
 Texto de la sección
 
-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;/
+-----------------------/
 ```
 
 ### Pie de html
@@ -196,39 +191,35 @@ Texto del pie de html
 &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;/
 ```
 
-Por arreglar:
+<!--
 
-Las listas ordenadas se identifican por los números seguidos de un punto y un espacio.
-```
-1. Primer elemento
-2. Segundo elemento
-3. Tercer elemento
-```
+## Sintaxis en desarrollo
 
-Por último está la imagen a usar unicamente en la creación de pdfs para cubrir una página completa. La imagen debe de estar en formato PDF y debe tener el tamaño del documento final.  
+### Código
+Para escribir texto que no se debe interpretar por este lenguage, el texto debe ser colocado entre dos pares de 3 acentos graves (```):
 
 ```
-![link.pdf]
+&#96;&#96;&#96	
+**Texto que no está en negrita**
+&#96;&#96;&#96	
 ```
-
-## Algunas sintaxis extra aún en desarrollo para exportar a .tex
 
 ### Sangría
-Una sangría se crea por medio del símbolo + al inicio del renglón. Se usa unicamente para dar estilo en la creación de PDF's.
+Para crear un .tex, una sangría se crea por medio del símbolo + al inicio del renglón. Se usa unicamente para dar estilo en la creación de PDF's.
 
 ```
 + Párrafo
 ```
 
 ### Renglón vacío
-Un renglon vacío se crea por medio de los símbolos ++ en un renglón. Los símbolos deben de estar seguidos y se usa únicamente para dar estilo en la creación de PDF's.
+Para crear un .tex, un renglon vacío se crea por medio de los símbolos ++ en un renglón. Los símbolos deben de estar seguidos y se usa únicamente para dar estilo en la creación de PDF's.
 
 ```
 ++
 ```
 
 ### Cambio de página
-Un cambio de página se crea por medio de los símbolos +++  en un renglón vacío. Los símbolos deben de estar seguidos y se usa únicamente para dar estilo en la creación de PDF's.
+Para crear un .tex, un cambio de página se crea por medio de los símbolos +++  en un renglón vacío. Los símbolos deben de estar seguidos y se usa únicamente para dar estilo en la creación de PDF's.
 
 ```
 +++
@@ -236,7 +227,7 @@ Un cambio de página se crea por medio de los símbolos +++  en un renglón vac�
 
 ### Imagen 
 
-Imagen a usar unicamente en la creación de pdfs para cubrir una página completa. La imagen debe de estar en formato PDF y debe tener el tamaño del documento final.  
+Para crear un .tex, imagen a usar unicamente en la creación de pdfs para cubrir una página completa. La imagen debe de estar en formato PDF y debe tener el tamaño del documento final.  
 
 ```
 !![link.pdf]
@@ -252,3 +243,5 @@ Las listas ordenadas se identifican por los números seguidos de un punto y un e
 2. Segundo elemento
 3. Tercer elemento
 ```
+
+-->
