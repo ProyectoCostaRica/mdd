@@ -142,29 +142,29 @@ Los audios deben tener un título para el tag alt en HTML y el link donde se enc
 !![Título](link.mp3)
 ```
 
-### Metadatos
+### **Metadatos**
 
 Los metadatos se colocan el inicio del documento. Cada metadato se coloca después de dos barras (//) y un espacio.
 
 ```
-&#47;&#47; LANGUAGE: es
-&#47;&#47; AUTHOR: Laylah Rain
-&#47;&#47; YEAR: 2020
+// LANGUAGE: es
+// AUTHOR: Laylah Rain
+// YEAR: 2020
 ```
 
-### Texto principal
+### **Texto principal**
 
-El texto principal del documento (como las trascripciones, ediciones y normas) se colocan entre los siguientes dos separadores: 
+El texto principal del documento se colocan entre los siguientes dos separadores para diferenciarlos de los metadatos: 
 
 ```
-&#45;&#45;&#45;&#45;START_TEXT&#45;&#45;&#45;&#45;
+------------START_TEXT------------;
 
 Texto principal
 
-&#45;&#45;&#45;&#45;END_TEXT&#45;&#45;&#45;&#45;
+-------------END_TEXT-------------;
 ```
 
-### Detalles 
+### **Detalles** 
 
 Los detalles no forman parte del texto principal, estas secciones se usan para dar información complementaria: licencias, recomendaciones de lectura, referencias ... 
 Cada sección de detalle debe tener un título, el cual se coloca después del símbolo numeral (#).
@@ -179,16 +179,16 @@ Texto de la sección
 -----------------------/
 ```
 
-### Pie de html
+### **Pie de html**
 
 Al final de un documento html se coloca el pie de este. El pie se escribe igual que una sección de detalles pero sin el titular. 
 
 ```
-/&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; 
+/----------------------- 
 
 Texto del pie de html
 
-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;/
+-----------------------/
 ```
 
 <!--
