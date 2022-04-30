@@ -6,6 +6,8 @@ MDD es una librería que transcribe un documento MD a un documento HTML. El obje
 
 MDD se basa en el modelo de la librería [Marked](https://github.com/markedjs/marked) creada por Christopher Jeffrey bajo la Licencia MIT.
 
+Acceda a la página [demo](https://proyectocostarica.github.io/mdd/mdd.html) para transformar un documento md a html.
+
 ## Comandos
 
 La librería está programada en Javascript haciendo uso de node.js para la modularizacion del código. Para ejecutar el código es necesario tener instalado node.js y usar un comando con el siguiente formato:
