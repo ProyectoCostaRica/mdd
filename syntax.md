@@ -150,6 +150,8 @@ Los metadatos se colocan el inicio del documento. Cada metadato se coloca despu√
 // LANGUAGE: es
 // AUTHOR: Laylah Rain
 // YEAR: 2020
+// DESCRIPTION: Descripci√≥n
+// CSS: link.css
 ```
 
 ### **Texto principal**
